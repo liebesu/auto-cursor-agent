@@ -31,13 +31,13 @@ loguru>=0.7.0
 python-dotenv>=1.0.0
 pydantic>=2.5.0
 
-# 代码分析
-ast-tools>=0.3.0
-python-ast>=0.1.0
+# 代码分析 (使用内置ast模块)
+# ast-tools>=0.3.0  # Python 3.13兼容性问题，使用内置ast
+# python-ast>=0.1.0  # 同上
 
-# 测试
-pytest>=7.4.0
-pytest-asyncio>=0.21.0
+# 测试 (简化测试依赖)
+# pytest>=7.4.0  # 暂时移除，使用简单测试
+# pytest-asyncio>=0.21.0
 
 # 其他工具
 rich>=13.7.0

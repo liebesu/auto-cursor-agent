@@ -112,7 +112,13 @@ class NeedAnalyzer:
     def __init__(self, config: Dict[str, Any]):
         """初始化需求分析器"""
         self.config = config
-        self.ai_manager = AIModelManager(config)
+        # 检查是否启用测试模式
+        test_mode = config.get('ai_models', {}).get('test_mode', {}).get('enabled', False)
+        if test_mode:
+            from core.test_ai_model import TestAIModelManager
+            self.ai_manager = TestAIModelManager(config)
+        else:
+            self.ai_manager = AIModelManager(config)
         self.processor = RequirementProcessor()
         logger.info("需求分析器已初始化")
     

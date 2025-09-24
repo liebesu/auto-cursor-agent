@@ -19,7 +19,13 @@ class TaskOrchestrator:
     def __init__(self, config: Dict[str, Any]):
         """初始化任务编排器"""
         self.config = config
-        self.ai_manager = AIModelManager(config)
+        # 检查是否启用测试模式
+        test_mode = config.get('ai_models', {}).get('test_mode', {}).get('enabled', False)
+        if test_mode:
+            from core.test_ai_model import TestAIModelManager
+            self.ai_manager = TestAIModelManager(config)
+        else:
+            self.ai_manager = AIModelManager(config)
         self.template = TaskTemplate()
         self.dependency_resolver = DependencyResolver()
         logger.info("任务编排器已初始化")
