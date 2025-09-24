@@ -513,3 +513,4 @@ class AutoOptimizer:
             total_optimizations += 1
         
         return improvements / total_optimizations if total_optimizations > 0 else 0.5
+

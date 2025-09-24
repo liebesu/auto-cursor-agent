@@ -234,3 +234,4 @@ tail -f logs/auto_cursor_agent.log
 ---
 
 🚀 开始你的AI自动化开发之旅！
+

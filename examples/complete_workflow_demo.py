@@ -345,3 +345,4 @@ if __name__ == "__main__":
         print("3. 检查Cursor安装路径")
         print()
         print("详细信息请查看README.md文档")
+

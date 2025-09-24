@@ -103,3 +103,4 @@ class DependencyResolver:
             validation_result["valid"] = False
         
         return validation_result
+

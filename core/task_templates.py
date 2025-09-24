@@ -176,3 +176,4 @@ class TaskTemplate:
     def get_template_tasks(self, project_type: str) -> Dict[str, Dict[str, Any]]:
         """获取项目类型的任务模板"""
         return self.templates.get(project_type, self.templates["web_app"])
+

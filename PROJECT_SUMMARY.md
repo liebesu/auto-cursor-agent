@@ -242,3 +242,4 @@ python main.py --requirement "你的需求" --workspace "./project"
 **💫 核心理念**: "让AI成为你的夜间开发伙伴"
 
 **感谢每一位关注和支持这个项目的开发者！让我们一起推动AI辅助开发的未来！** 🌟
+

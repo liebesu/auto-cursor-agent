@@ -8,3 +8,4 @@ Auto Cursor Agent AI代理模块
 """
 
 __version__ = "0.1.0"
+

@@ -300,3 +300,4 @@ class AIModelManager:
     def get_available_models(self) -> List[str]:
         """获取可用模型列表"""
         return list(self.models.keys())
+

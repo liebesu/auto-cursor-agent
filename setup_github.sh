@@ -57,3 +57,4 @@ echo "   1. 在GitHub上设置仓库描述"
 echo "   2. 添加Topics标签: ai, cursor, automation, development"
 echo "   3. 启用GitHub Pages (可选)"
 echo "   4. 设置分支保护规则 (可选)"
+
